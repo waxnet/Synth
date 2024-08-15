@@ -5,7 +5,7 @@ Synth is a tool that enables interaction between Lua and Selenium, allowing you 
 For more information, you can visit the [Synth Wiki](https://github.com/waxnet/Synth/wiki), where you'll find detailed documentation, tutorials, and additional resources to help you get started.
 
 ## Contribution
-If you would like to contribute to this project feel free to open an issue or create a fork. <br>
+If you'd like to contribute to this project, feel free to open an issue or create a fork. <br>
 <img src="https://img.shields.io/github/forks/waxnet/Synth">
 
 ## Stats
