@@ -7,6 +7,7 @@
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <ApplicationIcon>Assets\synth.ico</ApplicationIcon>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,7 +26,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="python C:\Users\GIAMI\Desktop\Synth\bin\Release\net8.0\.scripts\generate_release.py" />
+    <Exec Command="python %25userprofile%25\Desktop\Synth\bin\Release\net8.0\.scripts\generate_release.py" />
   </Target>
 
 </Project>

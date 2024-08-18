@@ -2,9 +2,9 @@
 
 namespace Synth.Api
 {
-    public class Window(IWindow window)
+    public class Window(IWindow? window)
     {
-        private readonly IWindow _window = window;
+        private readonly IWindow? _window = window;
 
         // properties
         public Vector2? Position

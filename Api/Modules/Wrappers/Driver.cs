@@ -30,6 +30,15 @@ namespace Synth.Api
                 return new Window(_driver?.Manage()?.Window);
             }
         }
+        public Network? Network
+        {
+            get
+            {
+                if (_driver?.Manage()?.Network == null)
+                    return null;
+                return new Network(_driver?.Manage().Network);
+            }
+        }
 
         // methods
         public void Quit()

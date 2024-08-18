@@ -34,7 +34,7 @@ namespace Synth.Api
                 typeof(Core),
                 typeof(Data),
                 typeof(FileSystem),
-                typeof(InputOutput),
+                typeof(Screen),
                 typeof(Other)
             ];
 

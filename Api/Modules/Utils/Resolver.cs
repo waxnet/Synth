@@ -6,16 +6,16 @@ namespace Synth.Api
     {
         public static By GetIdentifier(string identifier, string method)
         {
-            return method switch
+            return method.ToLower() switch
             {
-                "Id" => By.Id(identifier),
-                "Name" => By.Name(identifier),
-                "ClassName" => By.ClassName(identifier),
-                "TagName" => By.TagName(identifier),
-                "LinkText" => By.LinkText(identifier),
-                "PartialLinkText" => By.PartialLinkText(identifier),
-                "CssSelector" => By.CssSelector(identifier),
-                "XPath" => By.XPath(identifier),
+                "id" => By.Id(identifier),
+                "name" => By.Name(identifier),
+                "classname" => By.ClassName(identifier),
+                "tagname" => By.TagName(identifier),
+                "linktext" => By.LinkText(identifier),
+                "partiallinktext" => By.PartialLinkText(identifier),
+                "cssselector" => By.CssSelector(identifier),
+                "xpath" => By.XPath(identifier),
                 _ => By.Id(identifier),
             };
         }
