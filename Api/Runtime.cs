@@ -44,7 +44,8 @@ namespace Synth.Api
 
             // add data types
             List<Type> dataTypes = [
-                typeof(Vector2)
+                typeof(Vector2),
+                typeof(Cookie)
             ];
 
             foreach (var dataType in dataTypes)
@@ -52,7 +53,11 @@ namespace Synth.Api
                 runtime.DoString(dataType.Name + " = {}");
 
                 foreach (var method in dataType.GetMethods(BindingFlags.Static | BindingFlags.Public))
+                {
+                    if (!method.Name.Contains("New"))
+                        continue;
                     runtime.RegisterFunction($"{dataType.Name}.{method.Name}", method);
+                }
             }
 
             return runtime;

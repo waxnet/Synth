@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="python %25userprofile%25\Desktop\Synth\bin\Release\net8.0\.scripts\generate_release.py" />
+    <Exec Command="python %25userprofile%25\Desktop\projects\synth\bin\Release\net8.0\.scripts\generate_release.py" />
   </Target>
 
 </Project>

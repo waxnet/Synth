@@ -39,6 +39,15 @@ namespace Synth.Api
                 return new Network(_driver?.Manage().Network);
             }
         }
+        public Cookies? Cookies
+        {
+            get
+            {
+                if (_driver?.Manage()?.Cookies == null)
+                    return null;
+                return new Cookies(_driver?.Manage().Cookies);
+            }
+        }
 
         // methods
         public void Quit()
