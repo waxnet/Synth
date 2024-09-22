@@ -35,7 +35,8 @@ namespace Synth.Api
                 typeof(Data),
                 typeof(FileSystem),
                 typeof(Screen),
-                typeof(Other)
+                typeof(Other),
+                typeof(Http)
             ];
 
             foreach (var module in modules)
